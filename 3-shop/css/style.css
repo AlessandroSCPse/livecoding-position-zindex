@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    width: calc( 100% / 3 );
+    padding: 0 20px;
+}
+.product {
+    margin-top: 20px;
+    position: relative;
+}
+
+.discount {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.back-green {
+    background-color: green;
+}
+.back-red {
+    background-color: red;
+}
+
+.heart {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.product:hover .heart {
+    display: inline-block;
+}
